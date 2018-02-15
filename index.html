@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Location Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .icon-remove, .icon-check {
+            display: none
+        }
+    </style>
+</head>
+<body>
+    <section class="hero hero-body is-dark container">
+        <h1 class="title">US Location Info</h1>
+        <h2 class="subtitle">Enter a ZIP code to get the location info</h2>
+
+        <form id="zipForm">
+            <div class="field">
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input zip is-larg" type="text" placeholder="Enter ZIP code">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-map-pin"></i>
+                  </span>
+                  <span class="icon is-small is-right icon-remove">
+                    <i class="fa fa-check"></i>
+                  </span>
+                  <span class="icon is-small is-right icon-check">
+                        <i class="fa fa-remove"></i>
+                      </span>
+                </div>
+              </div>
+        </form>
+    </section>
+
+    <br>
+
+    <div class="container">
+        <div id="output"></div>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
